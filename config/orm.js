@@ -49,7 +49,7 @@ var orm = {
 		var queryString = "INSERT INTO " + table;
 
 		queryString += " (";
-		queryString += cols.toString();
+		queryString += column.toString();
 		queryString += ") ";
 		queryString += "VALUES (";
 		queryString += printQuestionMarks(value.length);
@@ -69,7 +69,7 @@ var orm = {
 		var queryString = "UPDATE " + table;
 
 		queryString += " SET ";
-		queryString += objToSql(objColVals);
+		queryString += objToSql(objectValue);
 		queryString += " WHERE ";
 		queryString += condition;
 

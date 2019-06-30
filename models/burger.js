@@ -7,7 +7,7 @@ var burger = {
 		});
 	},
 	insertOne: function(column, value, cb) {
-		orm.insertOne("burgers", columns, value, function(res) {
+		orm.insertOne("burgers", column, value, function(res) {
 			cb(res);
 		});
 	},
@@ -17,3 +17,5 @@ var burger = {
 		});
 	}
 };
+
+module.exports = burger;
