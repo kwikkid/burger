@@ -1,8 +1,16 @@
+<img src="/assets/images/burger.png">
 <h1> Eat-Da-Burger! </h1>
 <h2> Burgers waiting to be devoured</h2>
 
-
+<form id="addburger">
+<p> Enter a burger you want to eat and then click the 'Submit' button. </p>
+ 
+    <label for="burger-entry">Burger</label>
+    <input type="text" name="name" id="name"> <button type="submit" id="add">Add Burger</button>
+</form>
+<br>
 <div class="freshburger">
+<h2> burgers I want to devour!!!! </h2>
 <ul>
 	{{#each burgers}}
 		{{#unless devoured}}
@@ -12,22 +20,16 @@
 </ul>
 </div>
 
-<p> Enter a burger you want to eat and then click the 'Submit' button. </p>
+
 
 <div class="devoured">
+<h2> burgers I've devoured...nomnomnom. </h2>
 	{{#each burgers}}
 		{{#if devoured}}
 		<li> {{this.name}} </li>
 		{{/if}}
 	{{/each}}
 </div>
-<form id="addburger">
 
- 
-    <label for="burger-entry">Burger</label>
-    <input type="text" name="name" id="name">
 
-  <br>
-  <button type="submit" id="add">Add Burger</button>
-</form>
 

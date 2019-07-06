@@ -1,0 +1,30 @@
+* {
+	text-align: center;
+	font-family: "Overpass", sans-serif;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.freshburger {
+	float: left;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.devoured {
+	float: right;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+img {
+	height: 250px;
+	width: 300px;
+}
+
+button {
+	background-color: green;
+	color: white;
+}
